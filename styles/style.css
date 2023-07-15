@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("../assets/images/wave.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.window {
+  width: 80vw;
+  height: 90vh;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  display: flex;
+  overflow: hidden;
+}
+
+.left {
+  width: 20%;
+  height: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.034);
+  padding: 20px;
+}
+
+.window-buttons {
+  display: flex;
+  gap: 8px;
+  flex-direction: row;
+  padding-left: 10px;
+}
+
+.window-buttons > div {
+  width: 12px;
+  height: 12px;
+  background-color: var(--bg-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.menu {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: #4b5663;
+  cursor: pointer;
+}
+
+.menu > div:hover {
+  background-color: #0099ff13;
+  color: black;
+}
+
+.menu > div > i {
+  width: 15px;
+  scale: 0.8;
+}
+
+.divider {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+  padding-top: 10px;
+}
+
+.right {
+  flex: 1;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.637);
+}
+
+.top-bar {
+  padding: 8px 20px 8px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #4b5663c9;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-buttons > div {
+  cursor: pointer;
+}
+
+.nav-buttons > div:hover {
+  color: black;
+}
+
+.path {
+  font-size: 12px;
+  background-color: #4b56632c;
+  padding: 4px 10px 4px 15px;
+  border-radius: 4px;
+  width: 60%;
+}
+
+.path > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.options i {
+  cursor: pointer;
+}
+
+.options > i:hover {
+  color: black;
+}
+
+.h-divider {
+  border-left: 1px solid #4b56631c;
+  height: 15px;
+}
+
+.fa-github {
+  scale: 1.2;
+}
+
+a {
+  color: #4b5663c9;
+}
+
+a:hover {
+  color: black;
+}
+
+.active {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.43461134453781514) 0%,
+    rgba(0, 212, 255, 0.3449754901960784) 100%
+  );
+  color: white !important;
+}
+
+.active:hover {
+  background-color: #2768d08a !important;
+  color: white !important;
+}
+
+.display-area {
+  flex: 1;
+  height: calc(100% - 43px);
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+button {
+  position: absolute;
+  padding: 4px 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.43461134453781514) 0%,
+    rgba(0, 212, 255, 0.3449754901960784) 100%
+  );
+  color: white !important;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  translate: -50% -50%;
+  transition: top 0.2s ease-in-out, left 0.2s ease-in-out;
+}
+
+.play {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

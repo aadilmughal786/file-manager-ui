@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>File Manager</title>
+  </head>
+  <body>
+    <div class="window">
+      <div class="left">
+        <div class="window-buttons">
+          <div style="--bg-color: #fdc700"></div>
+          <div style="--bg-color: #00d865"></div>
+          <div style="--bg-color: #ff4347"></div>
+        </div>
+        <div class="menu">
+          <div><i class="fa-solid fa-clock-rotate-left"></i>Recent</div>
+          <div><i class="fa-regular fa-star"></i>Starred</div>
+          <div class="active"><i class="fa-solid fa-house"></i>Home</div>
+          <div><i class="fa-regular fa-file"></i>Documents</div>
+          <div><i class="fa-regular fa-circle-down"></i>Downloads</div>
+          <div><i class="fa-solid fa-music"></i>Music</div>
+          <div><i class="fa-regular fa-image"></i>Pictures</div>
+          <div><i class="fa-regular fa-file-video"></i>Videos</div>
+          <div><i class="fa-regular fa-trash-can"></i>Trash</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="menu">
+          <div><i class="fa-solid fa-hard-drive"></i>Server(FTP)</div>
+          <div><i class="fa-solid fa-hard-drive"></i>Drive</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="menu">
+          <div><i class="fa-solid fa-plus"></i>Other Locations</div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="top-bar">
+          <div class="nav-buttons">
+            <div class="backward" title="Go backward">
+              <i class="fa-solid fa-circle-chevron-left"></i>
+            </div>
+            <div class="forward" title="Go Forward">
+              <i class="fa-solid fa-circle-chevron-right"></i>
+            </div>
+          </div>
+
+          <div class="path">
+            <div>
+              <span><i class="fa-solid fa-house"></i> Home / Music</span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="options">
+            <i class="fa-solid fa-list"></i>
+            <div class="h-divider"></div>
+            <a href="https://github.com/aadilmughal786" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="display-area">
+          <div class="play">
+            <button><i class="fa-solid fa-plus"></i> Create</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
